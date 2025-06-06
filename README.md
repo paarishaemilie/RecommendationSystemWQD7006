@@ -1,16 +1,16 @@
 # User Cluster Assignment & Product Recommendations
 
-This Streamlit app allows you to simulate a new user's behavior, assign them to a user cluster using hierarchical clustering (Agglomerative Clustering), and get personalized product recommendations based on their cluster and selected product categories.
+This Streamlit app allows you to simulate a new user's behavior, assign them to a user cluster using hierarchical clustering (K-Means Clustering), and get personalized product recommendations based on their cluster and selected product categories.
 
 ## Features
 
 - Input sliders to simulate user behavior features (activity frequency, category count, unique products, average spend, etc.)
 - Assigns new user to one of three clusters:
-  - 💼 **Cluster 0** – Occasional Explorers
-  - 🛒 **Cluster 1** – Frequent Shoppers
-  - 💳 **Cluster 2** – High Spenders
+  - 0: Single High-Value Users - One-time buyers with high spend.
+  - 1: Active Loyal Users - Frequent buyers in a single category.
+  - 2: Occasional Explorers - Moderate activity across categories.
 - Nested dropdown filters for Main Category, Sub Category, and Brand
-- Displays top 10 recommended products for the assigned cluster and selected filters
+- Displays top 5 recommended products for the assigned cluster and selected filters
 - Clean, responsive UI with product recommendations shown in a table format
 
 ## Getting Started
